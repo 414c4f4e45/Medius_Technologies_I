@@ -8,7 +8,7 @@ This Flask application sends an email with an attachment using Flask-Mail. Sensi
   - **Recipients**: `tech@themedius.ai` and CC to `hr@themedius.ai`
   - **Subject**: "Python (Selenium) Assignment - Somenath Burnwal"
   - **Body**: A brief description of my approach to the assignment.
-  - **Attachment**: A ZIP file from `/home/fury/temp/flask/yourfile.zip`
+  - **Attachment**: ZIP files from `../`
 - **Error Handling**: Catches and returns SMTP exceptions.
 
 #### Instructions to Run:
