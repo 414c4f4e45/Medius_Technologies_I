@@ -72,7 +72,7 @@ def test_submit_google_form(form_data):
     #time.sleep(2)
     driver.quit()
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
 	form_data = ("John Doe", "1234567890", "john.doe@example.com", "123 Main St, City, Country", "123456", "24-01-1990", "Male")
 	#a=time.time()
 	test_submit_google_form(form_data)
