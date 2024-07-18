@@ -21,7 +21,7 @@ class GoogleFormPage:
     	self.driver.set_window_size(width, height)
     	# Find the full page element (usually 'body') and capture the screenshot
     	full_page = self.driver.find_element(By.TAG_NAME, "body")
-    	full_page.screenshot("before_filling.png")
+    	full_page.screenshot("screenshots/before_filling.png")
     	#self.driver.save_screenshot('before_filling.png')
     	
     	full_name = self.driver.find_element(By.XPATH, "//input[@aria-labelledby='i1']")
@@ -45,7 +45,7 @@ class GoogleFormPage:
     	captcha.send_keys("GNFPYC")
     	
     	full_page = self.driver.find_element(By.TAG_NAME, "body")
-    	full_page.screenshot("after_filling.png")
+    	full_page.screenshot("screenshots/after_filling.png")
     	#self.driver.save_screenshot('after_filling.png')
     	
     	#time.sleep(3)
@@ -53,7 +53,7 @@ class GoogleFormPage:
     	submit_button.click()
     	
     	full_page = self.driver.find_element(By.TAG_NAME, "body")
-    	full_page.screenshot("after_submitting.png")
+    	full_page.screenshot("screenshots/after_submitting.png")
     	#self.driver.save_screenshot('after_submitting.png')
 
 def test_submit_google_form(form_data):
